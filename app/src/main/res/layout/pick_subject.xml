@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/it"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="itOnClick"
+        app:srcCompat="@drawable/click"
+        app:layout_constraintBottom_toBottomOf="@+id/tit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintHorizontal_bias="0.531" />
+
+    <ImageButton
+        android:id="@+id/music"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="musicOnClick"
+        app:srcCompat="@drawable/note"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/tmusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="31dp"
+        android:text="@string/musicTxt"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintTop_toBottomOf="@+id/music" />
+
+    <ImageButton
+        android:id="@+id/food"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:onClick="foodOnClick"
+        app:layout_constraintBottom_toTopOf="@+id/tfood"
+        app:layout_constraintLeft_toLeftOf="@+id/literature"
+        app:layout_constraintRight_toRightOf="@+id/tliterature"
+        app:layout_constraintTop_toTopOf="@+id/sport"
+        app:srcCompat="@drawable/banana"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foodTxt"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tsport"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintRight_toRightOf="@+id/food"
+        app:layout_constraintTop_toTopOf="@+id/tsport"
+        android:layout_marginRight="15dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/sport"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="58dp"
+        android:onClick="sportOnClick"
+        app:layout_constraintBottom_toTopOf="@+id/movies"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ball"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintHorizontal_bias="0.531" />
+
+    <TextView
+        android:id="@+id/tsport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sport_and_fitnessTxt"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/sport" />
+
+    <ImageButton
+        android:id="@+id/gaming"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="0dp"
+        android:onClick="gamingOnClick"
+        app:srcCompat="@drawable/controller"
+        app:layout_constraintBottom_toTopOf="@+id/tgaming"
+        app:layout_constraintRight_toRightOf="@+id/music"
+        app:layout_constraintTop_toTopOf="@+id/sport"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tgaming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gamingTxt"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tsport"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/gaming"
+        app:layout_constraintTop_toTopOf="@+id/tsport"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/literature"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="54dp"
+        android:onClick="literatureOnClick"
+        app:srcCompat="@drawable/book"
+        app:layout_constraintBottom_toTopOf="@+id/art"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="29dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="29dp" />
+
+    <ImageButton
+        android:id="@+id/movies"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:onClick="moviesOnClick"
+        app:srcCompat="@drawable/film"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.531" />
+
+    <TextView
+        android:id="@+id/tliterature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/literatureTxt"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/literature"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/literature"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp" />
+
+    <ImageButton
+        android:id="@+id/art"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:onClick="artOnClick"
+        app:srcCompat="@drawable/brush"
+        app:layout_constraintBottom_toTopOf="@+id/tart"
+        app:layout_constraintLeft_toLeftOf="@+id/literature"
+        app:layout_constraintRight_toRightOf="@+id/literature"
+        app:layout_constraintTop_toTopOf="@+id/it"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/fashion"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:onClick="fashionOnClick"
+        app:srcCompat="@drawable/tshirt"
+        app:layout_constraintBottom_toTopOf="@+id/tfashion"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/it"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/artTxt"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tit"
+        app:layout_constraintTop_toBottomOf="@+id/it"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/art"
+        android:layout_marginLeft="19dp"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/tit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/itTxt"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="101dp"
+        app:layout_constraintLeft_toLeftOf="@+id/it"
+        android:layout_marginLeft="29dp" />
+
+    <TextView
+        android:id="@+id/tfashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fashion_and_beautyTxt"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/it"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movies"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/movies"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/movies"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="0dp" />
+</android.support.constraint.ConstraintLayout>

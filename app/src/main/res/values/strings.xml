@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Hobb.y</string>
+    <string name="start_now">Start now!</string>
+    <string name="username1">Username</string>
+    <string name="password1">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="register">Register</string>
+    <string name="musicTxt">Music</string>
+    <string name="foodTxt">Food</string>
+    <string name="sport_and_fitnessTxt">Sport and Fitness</string>
+    <string name="gamingTxt">Gaming</string>
+    <string name="literatureTxt">Literature</string>
+    <string name="movies_and_tvseriesTxt">Movies</string>
+    <string name="artTxt">Art</string>
+    <string name="itTxt">IT</string>
+    <string name="fashion_and_beautyTxt">Fashion and Beauty</string>
+    <string name="title">Choose a chat topic</string>
+    <string name="movies">Movies</string>
+    <string-array name="gender_names">
+        <item></item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other</item>
+    </string-array>
+    <integer-array name="img_id_arr">
+        <item>@drawable/group</item>
+        <item>@drawable/bubbles</item>
+        <item>@drawable/regist</item>
+    </integer-array>
+</resources>

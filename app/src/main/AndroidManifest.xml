@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.corina.hobby">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Subjects"></activity>
+        <activity android:name=".FoodChat"></activity>
+        <activity android:name=".SportChat"></activity>
+        <activity android:name=".GamingChat"></activity>
+        <activity android:name=".LiteratureChat"></activity>
+        <activity android:name=".MoviesChat"></activity>
+        <activity android:name=".MusicChat"></activity>
+        <activity android:name=".ArtChat"></activity>
+        <activity android:name=".ItChat"></activity>
+        <activity android:name=".FashionChat"></activity>
+    </application>
+
+</manifest>
